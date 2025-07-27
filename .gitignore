@@ -1,0 +1,4 @@
+node_modules
+upload_errors.log
+credentials.json
+token.json
