@@ -34,8 +34,8 @@ function start() {
       } finally {
         pendingUploads.delete(folderPath);
       }
-      // }, config.SYNC_DELAY_MINUTES * 60 * 1000);
-    }, 1000);
+    }, config.SYNC_DELAY_MINUTES * 60 * 1000);
+    // }, 1000);
 
     pendingUploads.set(folderPath, timeout);
   });
