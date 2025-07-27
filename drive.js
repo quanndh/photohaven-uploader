@@ -162,8 +162,6 @@ async function deleteOldDriveFolders() {
       } catch (err) {
         await logError(`DELETE FAIL | ${folder.name} | ${err.message}`);
       }
-    } else {
-      console.log(`Skip`, folder);
     }
   }
 }
