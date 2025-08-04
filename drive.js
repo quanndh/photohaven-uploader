@@ -107,6 +107,7 @@ async function uploadFolder(folderPath) {
   }
 
   const uploadPromises = files
+    .filter((f) => !f.toLowerCase().includes("cube"))
     .filter((f) => f.match(/\.(png)$/i))
     .map(async (file) => {
       const filePath = path.join(folderPath, file);
